@@ -1,11 +1,8 @@
-# Docus Default Starter
+# Yieldra Protocol Documentation
 
-> A beautiful, minimal starter for creating documentation with Docus
+> Documentation site for Yieldra - A full-stack DeFi solution bringing together DEX, lending, launchpad, and more.
 
-This is the default Docus starter template that provides everything you need to build beautiful documentation sites with Markdown and Vue components.
-
-> [!TIP]
-> If you're looking for i18n support, check out the [i18n starter](https://github.com/nuxt-themes/docus/tree/main/.starters/i18n).
+This documentation is built with [Docus](https://docus.dev) - a beautiful documentation theme powered by Nuxt.
 
 ## ✨ Features
 
@@ -22,10 +19,10 @@ This is the default Docus starter template that provides everything you need to 
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm dev
 ```
 
 Your documentation site will be running at `http://localhost:3000`
@@ -33,18 +30,37 @@ Your documentation site will be running at `http://localhost:3000`
 ## 📁 Project Structure
 
 ```
-my-docs/
-├── content/              # Your markdown content
+docs/
+├── content/              # Documentation content
 │   ├── index.md         # Homepage
-│   ├── 1.getting-started/  # Getting started section
-│   └── 2.essentials/    # Essential documentation
+│   ├── 1.getting-started/      # Overview section
+│   ├── 2.products/      # Product documentation
+│   │   ├── 1.yieldra-amm.md
+│   │   ├── 2.yieldra-lending.md
+│   │   ├── 3.yieldra-alpha.md
+│   │   └── 4.usdy.md
+│   └── 3.yra-token/     # YRA token do cumentation
+│       ├── 1.staking.md
+│       └── 2.airdrops.md
+├── app/                 # App configuration
+│   └── app.config.ts   # Docus configuration
 ├── public/              # Static assets
-└── package.json         # Dependencies and scripts
+└── package.json         # Dependencies
 ```
 
-## ⚡ Built with
+## 📝 Documentation Sections
 
-This starter comes pre-configured with:
+- **Overview** - Introduction to Yieldra Protocol
+- **Products**
+  - [Yieldra AMM](/products/yieldra-amm) - Multi-yielding liquidity provision
+  - [Yieldra Lending](/products/yieldra-lending) - Decentralized money market
+  - [Yieldra Alpha](/products/yieldra-alpha) - Community-driven launchpad (Coming Soon)
+  - [USDY](/products/usdy) - Decentralized stablecoin (Coming Soon)
+- **YRA Token**
+  - [Staking](/yra-token/staking) - Time-weighted staking with Yieldra Power
+  - [Airdrops](/yra-token/airdrops) - Epoch-based reward system
+
+## ⚡ Built with
 
 - [Nuxt 4](https://nuxt.com) - The web framework
 - [Nuxt Content](https://content.nuxt.com/) - File-based CMS
@@ -59,23 +75,21 @@ For detailed documentation on customizing your Docus project, visit the [Docus D
 
 ### 🤖 AI Assistant Skill
 
-Get started quickly with Docus by adding specialized knowledge to your AI assistant (Cursor, Claude, etc.):
+Get started quickly with Docus by adding specialized knowledge to your AI assistant:
 
 ```bash
 npx skills add nuxt-content/docus
 ```
 
-This skill helps you create documentation faster by providing your AI assistant with best practices, MDC component usage, ready-to-use templates, writing guidelines, and configuration tips for Docus. Perfect for quickly scaffolding new documentation projects.
-
 ## 🚀 Deployment
+
+Deployed to Vercel with automatic deployments from the main branch.
 
 Build for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
-
-The built files will be in the `.output` directory, ready for deployment to any hosting provider that supports Node.js.
 
 ## 📄 License
 

@@ -1,26 +1,22 @@
 ---
-seo:
-  title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
-    design out of the box. Docus brings together the best of the Nuxt ecosystem.
-    Powered by Nuxt UI.
+title: Yieldra Protocol Documentation
+description: Full-stack DeFi protocol docs for AMM, lending, launchpad, token utilities, and governance.
 ---
 
 ::u-page-hero
+
 #title
-Write beautiful docs with Markdown
+Yieldra Protocol
 
 #description
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
-
-Docus brings the best of the Nuxt ecosystem into one CLI.
+Full-stack DeFi solution bringing together a DEX, lending protocol, launchpad, and more into a single ecosystem — all operating at maximum capital efficiency through integrated smart contracts.
 
 #links
   :::u-button
   ---
-  color: neutral
+  color: primary
   size: xl
-  to: /getting-started/installation
+  to: /getting-started/welcome
   trailing-icon: i-lucide-arrow-right
   ---
   Get started
@@ -31,93 +27,81 @@ Docus brings the best of the Nuxt ecosystem into one CLI.
   color: neutral
   icon: simple-icons-github
   size: xl
-  to: https://github.com/nuxt-content/docus
+  to: https://github.com/yieldra-protocol
   variant: outline
   ---
-  Star on GitHub
+  GitHub
   :::
 ::
 
 ::u-page-section
 #title
-Shipped with many features
+Jump Right In!
 
 #features
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com
+  to: /products/yieldra-amm
   ---
   #title
-  Built with [Nuxt 4]{.text-primary}
+  Yieldra AMM
   
   #description
-  Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
+  **Multi-Yielding LP** — Earn from trading revenue, lending revenue and incentives all in one deposit.
   :::
 
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/
+  to: /products/yieldra-lending
   ---
   #title
-  Powered by [Nuxt UI]{.text-primary}
+  Yieldra Lending
   
   #description
-  Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI to give you the best docs writing experience with zero boilerplate, just focus on your content.
+  **High-Efficiency Lending** — Speculate, hedge, or get access to liquidity on your crypto for lower borrowing fees.
   :::
 
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com
+  to: /products/staking-as-a-service
   ---
   #title
-  Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
+  Yieldra Staking
   
   #description
-  The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
+  **Stake YRA for Rewards** — Earn community incentives, protocol revenue share and governance rights by staking YRA tokens.
   :::
 
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com/docs/guide/directory-structure/app-config
+  to: /yra-token/airdrops
   ---
   #title
-  Customize with [Nuxt App Config]{.text-primary}
+  Yieldra Airdrops
   
   #description
-  Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+  **Trade to Earn** — Earn Yieldra Points on qualifying trades on Yieldra DEX to receive a share of YRA epoch rewards.
   :::
 
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com/studio
+  to: /products/yieldra-alpha
   ---
   #title
-  Edit in production with [Nuxt Studio]{.text-primary}
+  Yieldra Alpha
   
   #description
-  Edit your content in production with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+  **Coming soon** — Launch your own meme, utility project or crowdfund your next big idea!
   :::
 
-  :::u-page-feature
+  :::u-page-card
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/components/content-search
+  to: /products/usdy
   ---
   #title
-  Built-in navigation and [full-text search]{.text-primary}
+  USDY Stablecoin
   
   #description
-  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
+  **Coming soon** — Decentralized over-collateralized stablecoin with fixed and variable rate borrowing.
   :::
 ::
