@@ -17,6 +17,8 @@ This documentation is built with [Docus](https://docus.dev) - a beautiful docume
 
 ## 🚀 Quick Start
 
+Use **Node.js 20.19+** (or a current LTS that satisfies `package.json` `engines`) so Nuxt and the toolchain install cleanly.
+
 ```bash
 # Install dependencies
 pnpm install
@@ -31,34 +33,25 @@ Your documentation site will be running at `http://localhost:3000`
 
 ```
 docs/
-├── content/              # Documentation content
-│   ├── index.md         # Homepage
-│   ├── 1.getting-started/      # Overview section
-│   ├── 2.products/      # Product documentation
-│   │   ├── 1.yieldra-amm.md
-│   │   ├── 2.yieldra-lending.md
-│   │   ├── 3.yieldra-alpha.md
-│   │   └── 4.usdy.md
-│   └── 3.yra-token/     # YRA token do cumentation
-│       ├── 1.staking.md
-│       └── 2.airdrops.md
-├── app/                 # App configuration
-│   └── app.config.ts   # Docus configuration
-├── public/              # Static assets
-└── package.json         # Dependencies
+├── content/
+│   ├── index.md                    # Homepage
+│   ├── 1.getting-started/          # Welcome, overview, capital efficiency
+│   ├── 2.products/                 # Product docs (AMM, lending, alpha, USDY, Den, staking-as-a-service, …)
+│   ├── 3.yra-token/                # Tokenomics, staking, buybacks, incentives, airdrops
+│   └── 4.protocol-and-governance/  # Treasury, governance framework
+├── app/                            # App configuration & components
+│   ├── app.config.ts               # Docus configuration
+│   └── components/
+├── public/                         # Static assets
+└── package.json
 ```
 
 ## 📝 Documentation Sections
 
-- **Overview** - Introduction to Yieldra Protocol
-- **Products**
-  - [Yieldra AMM](/products/yieldra-amm) - Multi-yielding liquidity provision
-  - [Yieldra Lending](/products/yieldra-lending) - Decentralized money market
-  - [Yieldra Alpha](/products/yieldra-alpha) - Community-driven launchpad (Coming Soon)
-  - [USDY](/products/usdy) - Decentralized stablecoin (Coming Soon)
-- **YRA Token**
-  - [Staking](/yra-token/staking) - Time-weighted staking with Yieldra Power
-  - [Airdrops](/yra-token/airdrops) - Epoch-based reward system
+- **Getting started** — Welcome, protocol overview, capital efficiency
+- **Products** — AMM, lending, Alpha, USDY, Yieldra Den, staking-as-a-service, and related guides
+- **YRA token** — Tokenomics, staking, buybacks, community incentives, airdrops
+- **Protocol & governance** — Treasury and governance framework
 
 ## ⚡ Built with
 
