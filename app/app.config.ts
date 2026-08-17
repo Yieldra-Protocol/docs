@@ -1,31 +1,27 @@
 export default defineAppConfig({
   docus: {
-    name: 'Yieldra',
-    description: 'Full-stack DeFi solution - DEX, lending, launchpad, and more',
-    url: 'https://docs.yieldra.io',
-    socials: {
-      github: 'https://github.com/yieldra-protocol',
-      x: 'https://x.com/YieldraProtocol',
-    },
-    header: {
-      logo: true
-    },
-    footer: {
-      credits: {
-        text: '© Yieldra Protocol',
-        href: 'https://yieldra.io'
-      },
-      iconLinks: []
-    }
+    locale: 'en',
+    colorMode: 'dark',
+  },
+  seo: {
+    title: 'Yieldra',
+    description: 'Full-stack DeFi solution with a DEX, lending, launchpad, and more.',
+  },
+  header: {
+    title: 'Yieldra',
+  },
+  socials: {
+    github: 'https://github.com/yieldra-protocol',
+    x: 'https://x.com/YieldraProtocol',
+  },
+  github: {
+    url: 'https://github.com/yieldra-protocol/docs',
+    branch: 'main',
   },
   ui: {
     colors: {
       primary: 'emerald',
-      neutral: 'zinc'
-    }
+      neutral: 'zinc',
+    },
   },
-  colorMode: {
-    preference: 'dark',
-    fallback: 'dark'
-  }
 })

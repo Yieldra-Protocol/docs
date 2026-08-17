@@ -83,13 +83,28 @@ npx skills add nuxt-content/docus
 
 ## 🚀 Deployment
 
-Deployed to Vercel with automatic deployments from the main branch.
+Deployed as the `yieldra-docs` Cloudflare Worker with Workers Assets and the
+`yieldra-docs-content` D1 database. The production custom domain is
+`https://docs.yieldra.io`.
 
 Build for production:
 
 ```bash
 pnpm run build
 ```
+
+Deploy using the Cloudflare API token for Evan's account:
+
+```bash
+CLOUDFLARE_API_TOKEN="$EVANSTINGER15_CLOUDFLARE_API_TOKEN" pnpm run deploy
+```
+
+The maintenance response is implemented in
+`server/middleware/maintenance.ts`. Remove that middleware when the updated
+documentation is ready to publish.
+
+The checked-in `vercel.json` cancels future Vercel builds because production
+hosting has moved to Cloudflare.
 
 ## 📄 License
 

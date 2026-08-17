@@ -1,13 +1,22 @@
 {
   "name": "docs",
+  "private": true,
+  "type": "module",
   "scripts": {
+    "postinstall": "nuxt prepare --extends docus",
     "dev": "nuxt dev --extends docus",
-    "build": "nuxt build --extends docus"
+    "build": "nuxt build --extends docus",
+    "test": "node --experimental-strip-types --test test/*.test.mjs",
+    "deploy": "pnpm build && wrangler deploy"
   },
   "dependencies": {
     "better-sqlite3": "^12.6.2",
-    "docus": "latest",
-    "nuxt": "^4.3.1",
+    "docus": "5.7.0",
+    "nuxt": "^4.5.2",
     "nuxt-studio": "1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "wrangler": "^4.123.0"
   }
 }
